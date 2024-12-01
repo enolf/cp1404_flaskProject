@@ -16,7 +16,7 @@ def greet(name=""):
 
 @app.route('/c2f/<input_temp>')
 def web_print_c2f(input_temp=''):
-    return f"{c_to_fahrenheit(float(input_temp))}"
+    return f"{input_temp}C is equal to {c_to_fahrenheit(float(input_temp))}F"
 
 
 def c_to_fahrenheit(convert):
